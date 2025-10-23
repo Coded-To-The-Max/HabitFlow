@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "HabitFlow - AI Habit Tracker",
+  "version": "1.0.0",
+  "description": "AI-powered habit tracker with smart insights and motivational reminders",
+  "permissions": [
+    "storage",
+    "notifications",
+    "activeTab",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "HabitFlow - Track Your Habits",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://api.openai.com;"
+  }
+}

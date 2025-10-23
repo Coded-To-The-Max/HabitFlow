@@ -1,0 +1,24 @@
+
+> habitflow-chrome-extension@1.0.0 dev
+> webpack --mode=development --watch
+
+asset dashboard/bundle.js 1.04 KiB [compared for emit] (name: dashboard) 1 related asset
+asset popup/bundle.js 1.02 KiB [compared for emit] (name: popup) 1 related asset
+./src/popup/index.tsx 39 bytes [built] [code generated]
+./src/dashboard/index.tsx 39 bytes [built] [code generated]
+
+ERROR in ./src/dashboard/index.tsx
+Module build failed (from ./node_modules/ts-loader/index.js):
+Error: TypeScript emitted no output for /app/src/dashboard/index.tsx.
+    at makeSourceMapAndFinish (/app/node_modules/ts-loader/dist/index.js:55:18)
+    at successLoader (/app/node_modules/ts-loader/dist/index.js:42:5)
+    at Object.loader (/app/node_modules/ts-loader/dist/index.js:23:5)
+
+ERROR in ./src/popup/index.tsx
+Module build failed (from ./node_modules/ts-loader/index.js):
+Error: TypeScript emitted no output for /app/src/popup/index.tsx.
+    at makeSourceMapAndFinish (/app/node_modules/ts-loader/dist/index.js:55:18)
+    at successLoader (/app/node_modules/ts-loader/dist/index.js:42:5)
+    at Object.loader (/app/node_modules/ts-loader/dist/index.js:23:5)
+
+webpack 5.101.3 compiled with 2 errors in 6824 ms

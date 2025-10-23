@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200 dark:border-gray-700;
+  }
+  
+  body {
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-white;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .habit-card {
+    @apply bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-4 transition-all duration-200 hover:shadow-md;
+  }
+  
+  .habit-complete-btn {
+    @apply w-8 h-8 rounded-full border-2 transition-all duration-200 flex items-center justify-center;
+  }
+  
+  .habit-complete-btn.completed {
+    @apply bg-success-500 border-success-500 text-white scale-105;
+  }
+  
+  .habit-complete-btn.incomplete {
+    @apply border-gray-300 dark:border-gray-600 hover:border-success-400 hover:bg-success-50 dark:hover:bg-success-900/20;
+  }
+  
+  .streak-indicator {
+    @apply px-2 py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300;
+  }
+  
+  .category-badge {
+    @apply px-2 py-1 rounded-full text-xs font-medium;
+  }
+  
+  .floating-button {
+    @apply fixed bottom-4 right-4 w-14 h-14 bg-primary-500 hover:bg-primary-600 text-white rounded-full shadow-lg transition-all duration-200 flex items-center justify-center hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2;
+  }
+  
+  .modal-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50;
+  }
+  
+  .modal-content {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto;
+  }
+  
+  .form-input {
+    @apply w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:text-white;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg transition-colors duration-200 font-medium;
+  }
+  
+  .btn-danger {
+    @apply bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium;
+  }
+}
