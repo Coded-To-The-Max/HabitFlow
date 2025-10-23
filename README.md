@@ -251,7 +251,7 @@ npm run type-check # TypeScript validation
 
 ## 📄 License
 
-MIT License - see LICENSE file for details.
+GNU License - see LICENSE file for details.
 
 ## 🙏 Acknowledgments
 
