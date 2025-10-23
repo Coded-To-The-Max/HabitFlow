@@ -1,7 +1,7 @@
 import { Habit, HabitCompletion, HabitStreak, HabitInsight, HabitStats } from '../types/habit';
 
 export class AIService {
-  private static readonly API_KEY = '***REMOVED***';
+  private static readonly API_KEY = process.env.OPENAI_API_KEY;
   private static readonly API_URL = 'https://api.openai.com/v1/chat/completions';
 
   static async generateHabitInsights(
