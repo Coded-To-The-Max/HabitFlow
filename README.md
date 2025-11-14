@@ -29,13 +29,6 @@ A modern, minimal, and intelligent habit tracker Chrome extension with AI-powere
 - Completion percentage and progress bars
 - Weekly and monthly statistics
 
-### 🤖 **AI-Powered Insights**
-- Personalized habit suggestions based on completion patterns
-- Motivational reminders tailored to your progress
-- Optimal timing recommendations using historical data
-- Smart insights about consistency and improvement areas
-- AI-generated progress summaries
-
 ### 🔔 **Smart Notifications**
 - Browser notifications for habit reminders
 - Customizable reminder times
@@ -99,12 +92,6 @@ npm run dev    # Watches for changes and rebuilds automatically
 3. Watch your streaks grow with visual celebrations
 4. View progress in the quick stats cards
 
-### 📊 **Dashboard View**
-1. Click the "External Link" icon in the popup header
-2. Opens full dashboard in a new tab
-3. View detailed statistics and insights
-4. Generate AI-powered recommendations
-
 ### 🤖 **AI Insights**
 1. Enable AI insights in Settings (gear icon)
 2. Click "Generate AI Insights" in dashboard
@@ -127,8 +114,6 @@ npm run dev    # Watches for changes and rebuilds automatically
 
 ### **AI Integration**
 - **OpenAI GPT-4** - Intelligent insights generation
-- **Smart Analytics** - Pattern recognition
-- **Personalized Recommendations** - Context-aware suggestions
 
 ### **File Structure**
 ```
